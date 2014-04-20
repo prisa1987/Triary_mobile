@@ -1,0 +1,24 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.example.triary_app.MainActivity" >
+
+    <item
+        android:id="@+id/action_settings"
+        android:orderInCategory="100"
+        android:title="@string/action_settings"
+        app:showAsAction="never"/>
+    
+     <!-- Add -->
+    <item android:id="@+id/action_add"
+          android:icon="@drawable/home_plus"
+          android:title="Add"
+          android:showAsAction="always"/>
+    
+         <!-- Done -->
+    <item android:id="@+id/action_done"
+          android:icon="@drawable/abc_ic_cab_done_holo_light"
+          android:title="Done"
+          android:showAsAction="always"/>
+
+</menu>
