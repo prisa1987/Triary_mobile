@@ -5,9 +5,33 @@
     android:versionName="1.0" >
 
     <uses-sdk
-        android:minSdkVersion="16"
+        android:minSdkVersion="17"
         android:targetSdkVersion="19" />
     
+    <!-- Accessing camera hardware -->
+    
+      <permission
+        android:name="com.example.triary_app.permission.MAPS_RECEIVE"
+        android:protectionLevel="signature"/>
+      
+      <uses-feature
+	        android:glEsVersion="0x00020000"
+	        android:required="true"/>
+    
+   
+    <uses-permission android:name="android.permission.CAMERA" />
+ 	<uses-feature android:name="android.hardware.camera" />
+ 	<uses-feature android:name="android.hardware.camera.autofocus" />
+ 		<uses-permission android:name="android.permission.INTERNET" />
+ 	<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"  />
+	<uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+	<uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES"/>
+	<!-- The following two permissions are not required to use
+	     Google Maps Android API v2, but are recommended. -->
+	<uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+	<uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+	
+	
      <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"  />
      <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
 
@@ -24,14 +48,30 @@
                 <category android:name="android.intent.category.LAUNCHER"/>
             </intent-filter>
         </activity>
-        <activity android:name="MainActivity"></activity>
-        <activity android:name="Cover_BookActivity"></activity>
-        <activity android:name="Creation_2nd_BookActivity"></activity>
-        <activity android:name="Creation_3rd_BookActivity"></activity>
+        <activity android:name="MainActivity"> android:screenOrientation="portrait" </activity>
+        <activity android:name="Cover_BookActivity"> android:screenOrientation="portrait" </activity>
+        <activity android:name="Creation_2nd_BookActivity"> android:screenOrientation="portrait" </activity>
+        <activity android:name="Creation_3rd_BookActivity"> android:screenOrientation="portrait" </activity>
         
    
-         <activity android:name="Creation_detail_BookActivity"></activity>
-         <activity android:name="Creation_4th_BookActivity"></activity>
+         <activity android:name="Creation_detail_BookActivity"> android:screenOrientation="portrait" </activity>
+         <activity android:name="Creation_4th_BookActivity"> android:screenOrientation="portrait"</activity>
+         
+         <meta-data 
+            android:name="com.google.android.maps.v2.API_KEY"
+            android:value="AIzaSyCldMJnF0q0d_scOsps5SSAZauy5jn3esI"
+            />
+         <meta-data
+            android:name="com.google.android.gms.version"
+           android:value="6587000" />
+         
+         <uses-library android:name="com.google.android.maps" />
+         <activity android:name="Reading_category_book"> android:screenOrientation="portrait" </activity>
+         <activity android:name="Reading_detail_book"> android:screenOrientation="portrait" </activity>
+         <activity android:name="DeleteBookAction"> android:screenOrientation="portrait" </activity>
+         <activity android:name="DeleteDetailAction"> android:screenOrientation="portrait" </activity>
+         <activity android:name="MapActivity"> android:screenOrientation="portrait" </activity>
+         <activity android:name="edit_2nd_BookActivity"></activity>
 </application>
 
 </manifest>

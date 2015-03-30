@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="353dp"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:id="@+id/imageArea"
+            android:layout_width="280dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:padding="0dp"
+            android:scaleType="centerCrop"
+             />
+
+        <LinearLayout
+            android:layout_width="75dp"
+            android:layout_height="324dp"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <ImageView
+                android:id="@+id/AttractionBTN"
+                android:layout_width="68dp"
+                android:layout_height="68dp"
+                android:padding="10dp"
+                android:src="@drawable/compass" />
+
+            <ImageView
+                android:id="@+id/AccomodationBTN"
+                android:layout_width="68dp"
+                android:layout_height="68dp"
+                android:padding="10dp"
+                android:src="@drawable/accomodation" />
+
+            <ImageView
+                android:id="@+id/foodBTN"
+                android:layout_width="68dp"
+                android:layout_height="68dp"
+                android:padding="10dp"
+                android:src="@drawable/food" />
+
+            <ImageView
+                android:id="@+id/otherBTN"
+                android:layout_width="68dp"
+                android:layout_height="68dp"
+                android:padding="10dp"
+                android:src="@drawable/shopping" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="169dp"
+            android:layout_height="43dp"
+            android:layout_weight="0.72"
+            android:hint="Title"
+            android:paddingLeft="15dip"
+            android:paddingRight="15dip"
+            android:textSize="30sp" />
+    </LinearLayout>
+    
+        <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:id="@+id/countryView"
+            android:layout_width="169dp"
+            android:layout_height="43dp"
+            android:layout_weight="0.72"
+            android:hint="Country"
+            android:paddingLeft="15dip"
+            android:paddingRight="15dip"
+            android:textSize="20sp" />
+    </LinearLayout>
+    
+         <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right" >
+
+        <TextView
+            android:id="@+id/authorView"
+            android:layout_width="169dp"
+            android:layout_height="43dp"
+            android:layout_weight="0.08"
+            android:hint="Author"
+            android:paddingLeft="250dip"
+            android:textSize="20sp" />
+
+    </LinearLayout>
+
+</LinearLayout>

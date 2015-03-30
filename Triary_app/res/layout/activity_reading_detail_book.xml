@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+        android:background="#efeff4"
+        android:screenOrientation="portrait"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+           android:background="#FFFFFF"
+        android:layout_height="wrap_content" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#01B18B"
+                android:padding="10dp" >
+
+                <TextView
+                    android:id="@+id/titleText"
+                    android:layout_width="115dp"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:text="Name :"
+                    android:textColor="#FFFFFF"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/titleView"
+                    android:layout_width="326dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.37"
+                    android:hint=" Name of place "
+                    android:padding="10dp"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:textColor="#FFFFFF"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/dateView"
+                    android:layout_width="129dp"
+                    android:layout_height="wrap_content"
+                    android:hint="date "
+                    android:padding="10dp"
+                    android:textColor="#FFFFFF"
+                    android:textSize="13sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+            </LinearLayout>
+
+        </LinearLayout>
+        
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/imageBigView"
+        android:layout_width="match_parent"
+        android:layout_height="303dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="10dp"
+        android:background="#EDEDED"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:scaleType="fitCenter"
+        android:src="@drawable/sea" />
+
+	<ScrollView
+	    android:id="@+id/scrollView"
+	    android:layout_width="579dp"
+	    android:layout_height="wrap_content"
+	    android:layout_marginBottom="10dp"
+	    android:layout_weight="0.25"
+	    android:background="#FFFFFF"
+	    android:scrollbars="none" >
+      
+        <LinearLayout
+            android:layout_width="match_parent"
+             android:layout_height="match_parent"
+         
+            android:layout_weight="1.33"
+            android:background="#FFFFFF" >
+
+            <TextView
+                android:id="@+id/commentText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="20dp"
+                android:paddingLeft="50dp"
+                android:scrollbars="vertical"
+                android:text="Caption: "
+                android:textColor="#01B18B"
+                android:textSize="15sp" />
+
+            
+                <TextView
+                    android:id="@+id/commentView"
+                    android:layout_width="456dp"
+                    android:layout_height="130dp"
+                    android:hint="Detail"
+                    android:padding="20dp"
+                    android:scrollbars="vertical" />
+               </LinearLayout> 
+            </ScrollView>
+            
+      
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.33"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="102dp"
+                android:layout_marginBottom="10dp"
+                android:background="#FFFFFF" >
+
+                <ImageView
+                    android:id="@+id/imageMap"
+                    android:layout_width="178dp"
+                    android:layout_height="90dp"
+                    android:src="@drawable/map2" />
+
+                <TextView
+                    android:id="@+id/commentView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:scrollbars="vertical"
+                    android:text="Place : "
+                    android:textColor="#01B18B"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/placesView"
+                    android:layout_width="286dp"
+                    android:layout_height="87dp"
+                    android:hint="Places"
+                    android:paddingLeft="10dp"
+                    android:paddingTop="10dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:background="#FFFFFF"
+                android:orientation="horizontal"
+                android:paddingBottom="5dp"
+                android:paddingTop="5dp" >
+
+                <TextView
+                    android:id="@+id/SCORETEXT"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="25dp"
+                    android:paddingLeft="35dp"
+                    android:text="Rating : "
+                    android:textColor="#01B18B"
+                    android:textSize="15sp" />
+
+                <RatingBar
+                    android:id="@+id/mainRatingBar"
+                    style="@style/foodRatingBar"
+                    android:layout_width="310dp"
+                    android:layout_height="100dp"
+                    android:layout_marginLeft="30dp"
+                    android:isIndicator="true"
+                    android:padding="10dp"
+                    android:scaleType="fitXY" />
+            </LinearLayout>
+        </LinearLayout>
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="176dp"
+        android:columnCount="1" >
+
+    </GridLayout>
+
+</LinearLayout>

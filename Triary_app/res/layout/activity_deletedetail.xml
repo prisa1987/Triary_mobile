@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+	android:id="@+id/scrollview"
+	android:layout_height="wrap_content"
+	android:layout_width="fill_parent"
+	android:isScrollContainer="true"
+	android:screenOrientation="portrait"
+	android:scrollbars="none">
+<RelativeLayout 
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+ 
+    <ListView
+        android:id="@android:id/list"
+        android:layout_width="fill_parent"
+        android:layout_height="800dp"
+        android:choiceMode="multipleChoice" >
+
+    </ListView>
+ 
+    <Button
+        android:id="@+id/btnDel"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+         android:background="#01B18B"
+          android:textColor="#FFFFFF"
+        android:text="Delete" />
+</RelativeLayout>
+</ScrollView>
